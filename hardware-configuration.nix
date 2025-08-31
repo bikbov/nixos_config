@@ -23,10 +23,8 @@
     fsType = "vfat";
   };
 
-  # Настройки для работы с USB
   boot.loader.grub.device = "nodev";
   boot.loader.grub.efiSupport = true;
   boot.loader.grub.useOSProber = true;
-
   hardware.enableRedistributableFirmware = true;
 }
